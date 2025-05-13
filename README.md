@@ -1,11 +1,11 @@
 ## MMDetection
-Please follow the instructions in MMDetection to set up the environment first.
+Please follow the instructions in MMDetection to set up the environment first.  
 
-There are four models traning and testing on MMDetection.
-Faster-Rcnn: mmdetection/configs/faster_rcnn/faster-rcnn_my_full.py
-YOLOv3: mmdetection/configs/yolo/yolov3_my_full.py
-RTMDet: mmdetection/configs/rtmdet/rtmdet_my_full.py
-Co-DETR: mmdetection/projects/CO-DETR/configs/codino/co_dino_my_full.py
+There are four models traning and testing on MMDetection.  
+Faster-Rcnn: mmdetection/configs/faster_rcnn/faster-rcnn_my_full.py  
+YOLOv3: mmdetection/configs/yolo/yolov3_my_full.py  
+RTMDet: mmdetection/configs/rtmdet/rtmdet_my_full.py  
+Co-DETR: mmdetection/projects/CO-DETR/configs/codino/co_dino_my_full.py  
 
 Modify <YOUR ROOT> and <YOUR DATASET> in these four config files.
 
