@@ -1,3 +1,4 @@
+![TEASER](./teaser.png)
 ## MMDetection
 Please follow the instructions in [MMDetection](./mmdetection) to set up the environment first.  
 
