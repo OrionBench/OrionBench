@@ -19,7 +19,7 @@ bash tools/dist_train.sh projects/CO-DETR/configs/codino/co_dino_my_full.py 8 --
 
 The following figure shows detection results of evaluated object detection models: (a) zero-shot prompting with DINO-X; (b) 4-shot prompting with T-Rex2; (c) 4-shot fine-tuning with Co-DETR; (d) fine-tuning on OrionBench with Co-DETR. Bounding boxes in colors are the predictions for charts and HROs.
 
-![det_qual](./det_qual.pdf)
+![det_qual](./det_qual.png)
 
 Additionally, the InternImage-based model co-developed with the benchmark is available on [Huggingface](https://huggingface.co/OrionBench/InternImage_L_DINO).
 
