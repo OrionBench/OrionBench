@@ -17,4 +17,24 @@ bash tools/dist_train.sh configs/rtmdet/rtmdet_my_full_new.py 8 --cfg-options da
 bash tools/dist_train.sh projects/CO-DETR/configs/codino/co_dino_my_full.py 8 --cfg-options data.samples_per_gpu=1 optimizer_config.cumulative_iters=8 optimizer_config.type="GradientCumulativeOptimizerHook" --work-dir work_dir/codetr_my_full
 ```
 
+The following figure shows detection results of evaluated object detection models: (a) zero-shot prompting with DINO-X; (b) 4-shot prompting with T-Rex2; (c) 4-shot fine-tuning with Co-DETR; (d) fine-tuning on OrionBench with Co-DETR. Bounding boxes in colors are the predictions for charts and HROs.
+
+![det_qual](./det_qual.pdf)
+
 Additionally, the InternImage-based model co-developed with the benchmark is available on [Huggingface](https://huggingface.co/OrionBench/InternImage_L_DINO).
+
+## References
+
+Please cite our paper if you use our model or dataset in your research
+
+```
+@misc{zhu2025orionbenchbenchmarkcharthumanrecognizable,
+      title={OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics}, 
+      author={Jiangning Zhu and Yuxing Zhou and Zheng Wang and Juntao Yao and Yima Gu and Yuhui Yuan and Shixia Liu},
+      year={2025},
+      eprint={2505.17473},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.17473}, 
+}
+```
