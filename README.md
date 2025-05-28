@@ -28,7 +28,7 @@ Additionally, the InternImage-based model co-developed with the benchmark is ava
 Please cite our paper if you use our model or dataset in your research
 
 ```
-@misc{zhu2025orionbenchbenchmarkcharthumanrecognizable,
+@misc{zhu2025orionbench,
       title={OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics}, 
       author={Jiangning Zhu and Yuxing Zhou and Zheng Wang and Juntao Yao and Yima Gu and Yuhui Yuan and Shixia Liu},
       year={2025},
