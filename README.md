@@ -1,3 +1,8 @@
+<h1>
+  <img src="./logo.png" alt="Logo" width="50" style="vertical-align: middle; margin-right: 10px;"/>
+  OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics
+</h1>
+
 ![TEASER](./teaser.png)
 This repository contains the code for the paper "OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics". The related data is available on [Huggingface](https://huggingface.co/datasets/OrionBench/OrionBench).
 
