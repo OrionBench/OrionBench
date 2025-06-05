@@ -1,5 +1,5 @@
 <h1>
-  <img src="./logo.png" alt="Logo" width="50" style="vertical-align: middle; margin-right: 10px;"/>
+  <img src="./logo.png" alt="Logo" width="80" style="vertical-align: middle; margin-right: 10px;"/>
   OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics
 </h1>
 
