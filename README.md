@@ -26,10 +26,10 @@
 ![TEASER](./assets/teaser.png)
 
 ## 🔥 News
-[2025.5] 🎉🎉 We have released the first version of our dataset, which includes 26,250 real and 78,750 synthetic infographic charts, with over 6.9 million bounding box annotations.
+[2025.5] 🎉🎉 We have released the first version of our benchmark, which includes 26,250 real and 78,750 synthetic infographic charts, with over 6.9 million bounding box annotations.
 
 ## 📦 Benchmark
-**[👉 Access the full OrionBench dataset on Hugging Face 🤗! 👈](https://huggingface.co/datasets/OrionBench/OrionBench)**
+**[👉 Access the full OrionBench benchmark on Hugging Face 🤗! 👈](https://huggingface.co/datasets/OrionBench/OrionBench)**
 
 OrionBench comprises a diverse collection of infographics from two sources: 1) real infographics collected from 7 online platforms, and 2) synthetic infographics programmatically created from 1,072 design templates.
 To effectively annotate the infographics, we combine the model-in-the-loop and programmatic methods.
