@@ -1,0 +1,134 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="727" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HttpUrlsUsage" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredUrls">
+        <list>
+          <option value="http://localhost" />
+          <option value="http://127.0.0.1" />
+          <option value="http://0.0.0.0" />
+          <option value="http://www.w3.org/" />
+          <option value="http://json-schema.org/draft" />
+          <option value="http://java.sun.com/" />
+          <option value="http://xmlns.jcp.org/" />
+          <option value="http://javafx.com/javafx/" />
+          <option value="http://javafx.com/fxml" />
+          <option value="http://maven.apache.org/xsd/" />
+          <option value="http://maven.apache.org/POM/" />
+          <option value="http://www.springframework.org/schema/" />
+          <option value="http://www.springframework.org/tags" />
+          <option value="http://www.springframework.org/security/tags" />
+          <option value="http://www.thymeleaf.org" />
+          <option value="http://www.jboss.org/j2ee/schema/" />
+          <option value="http://www.jboss.com/xml/ns/" />
+          <option value="http://www.ibm.com/webservices/xsd" />
+          <option value="http://activemq.apache.org/schema/" />
+          <option value="http://schema.cloudfoundry.org/spring/" />
+          <option value="http://schemas.xmlsoap.org/" />
+          <option value="http://cxf.apache.org/schemas/" />
+          <option value="http://primefaces.org/ui" />
+          <option value="http://tiles.apache.org/" />
+          <option value="http://" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="67">
+            <item index="0" class="java.lang.String" itemvalue="scikit-image" />
+            <item index="1" class="java.lang.String" itemvalue="gensim" />
+            <item index="2" class="java.lang.String" itemvalue="numba" />
+            <item index="3" class="java.lang.String" itemvalue="decorator" />
+            <item index="4" class="java.lang.String" itemvalue="jieba" />
+            <item index="5" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="6" class="java.lang.String" itemvalue="SQLAlchemy" />
+            <item index="7" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="8" class="java.lang.String" itemvalue="marshmallow" />
+            <item index="9" class="java.lang.String" itemvalue="invoke" />
+            <item index="10" class="java.lang.String" itemvalue="numpy" />
+            <item index="11" class="java.lang.String" itemvalue="requests" />
+            <item index="12" class="java.lang.String" itemvalue="pandasql" />
+            <item index="13" class="java.lang.String" itemvalue="sqlvalidator" />
+            <item index="14" class="java.lang.String" itemvalue="pymssql" />
+            <item index="15" class="java.lang.String" itemvalue="jsonpath" />
+            <item index="16" class="java.lang.String" itemvalue="moviepy" />
+            <item index="17" class="java.lang.String" itemvalue="lxml" />
+            <item index="18" class="java.lang.String" itemvalue="Flask_Cors" />
+            <item index="19" class="java.lang.String" itemvalue="cx_Oracle" />
+            <item index="20" class="java.lang.String" itemvalue="Flask" />
+            <item index="21" class="java.lang.String" itemvalue="pyarrow" />
+            <item index="22" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="23" class="java.lang.String" itemvalue="apache_airflow" />
+            <item index="24" class="java.lang.String" itemvalue="sqlalchemy-utils" />
+            <item index="25" class="java.lang.String" itemvalue="pexpect" />
+            <item index="26" class="java.lang.String" itemvalue="click" />
+            <item index="27" class="java.lang.String" itemvalue="jinja2" />
+            <item index="28" class="java.lang.String" itemvalue="paramiko" />
+            <item index="29" class="java.lang.String" itemvalue="Flask_SQLAlchemy" />
+            <item index="30" class="java.lang.String" itemvalue="fabric" />
+            <item index="31" class="java.lang.String" itemvalue="librosa" />
+            <item index="32" class="java.lang.String" itemvalue="hdfs" />
+            <item index="33" class="java.lang.String" itemvalue="pika" />
+            <item index="34" class="java.lang.String" itemvalue="PyMySQL" />
+            <item index="35" class="java.lang.String" itemvalue="pyjwt" />
+            <item index="36" class="java.lang.String" itemvalue="pyenchant" />
+            <item index="37" class="java.lang.String" itemvalue="scipy" />
+            <item index="38" class="java.lang.String" itemvalue="tensorflow" />
+            <item index="39" class="java.lang.String" itemvalue="cvxpy" />
+            <item index="40" class="java.lang.String" itemvalue="torch" />
+            <item index="41" class="java.lang.String" itemvalue="json_tricks" />
+            <item index="42" class="java.lang.String" itemvalue="pytest" />
+            <item index="43" class="java.lang.String" itemvalue="cityscapesscripts" />
+            <item index="44" class="java.lang.String" itemvalue="flake8" />
+            <item index="45" class="java.lang.String" itemvalue="interrogate" />
+            <item index="46" class="java.lang.String" itemvalue="ptflops" />
+            <item index="47" class="java.lang.String" itemvalue="tensorwatch" />
+            <item index="48" class="java.lang.String" itemvalue="tensorboardX" />
+            <item index="49" class="java.lang.String" itemvalue="isort" />
+            <item index="50" class="java.lang.String" itemvalue="einops" />
+            <item index="51" class="java.lang.String" itemvalue="xdoctest" />
+            <item index="52" class="java.lang.String" itemvalue="codecov" />
+            <item index="53" class="java.lang.String" itemvalue="terminaltables" />
+            <item index="54" class="java.lang.String" itemvalue="timm" />
+            <item index="55" class="java.lang.String" itemvalue="torchvision" />
+            <item index="56" class="java.lang.String" itemvalue="deepspeed" />
+            <item index="57" class="java.lang.String" itemvalue="setuptools" />
+            <item index="58" class="java.lang.String" itemvalue="loguru" />
+            <item index="59" class="java.lang.String" itemvalue="autoflake" />
+            <item index="60" class="java.lang.String" itemvalue="hydra-core" />
+            <item index="61" class="java.lang.String" itemvalue="black" />
+            <item index="62" class="java.lang.String" itemvalue="wandb" />
+            <item index="63" class="java.lang.String" itemvalue="pybind11" />
+            <item index="64" class="java.lang.String" itemvalue="omegaconf" />
+            <item index="65" class="java.lang.String" itemvalue="psutil" />
+            <item index="66" class="java.lang.String" itemvalue="submitit" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W292" />
+          <option value="E271" />
+          <option value="E231" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>

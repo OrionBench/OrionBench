@@ -1,0 +1,3 @@
+The InternImage-based model co-developed with the benchmark is available on [Huggingface](https://huggingface.co/OrionBench/InternImage_L_DINO).
+
+The weights are designed for use with the [InternImage repository](https://github.com/OpenGVLab/InternImage/tree/master/detection) and its corresponding [configuration file](https://github.com/OpenGVLab/InternImage/blob/master/detection/configs/coco/dino_4scale_internimage_l_1x_coco_0.1x_backbone_lr.py).

@@ -1,0 +1,1 @@
+We provide the [prompt](./prompt.py) for grounded chain-of-thought and the [script](./evaluate_predictions.py) for result evaluation.

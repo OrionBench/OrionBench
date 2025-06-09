@@ -1,56 +1,76 @@
+<div align=center>
+  <img src="./assets/logo.png" width=300 >
+</div>
+
 <h1>
-  <img src="./logo.png" alt="Logo" width="80" style="vertical-align: middle; margin-right: 10px;"/>
   OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics
 </h1>
 
-## Dataset
+<p align="center">
+  <a href="https://arxiv.org/abs/2505.17473">
+    <img
+      src="https://img.shields.io/badge/OrionBench-Paper-Red%25red?logo=arxiv&logoColor=red&color=yellow"
+      alt="OrionBench Paper on arXiv"
+    />
+  </a>
+  <a href="https://huggingface.co/datasets/OrionBench/OrionBench">
+    <img
+      src="https://img.shields.io/badge/OrionBench-Data-orange?logo=huggingface&logoColor=yellow" 
+      alt="OrionBench data on Hugging Face"
+    />
+  </a>
+</p>
 
-This repository contains the code for the paper "OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics". The related data is available on [Huggingface](https://huggingface.co/datasets/OrionBench/OrionBench).
+> OrionBench is a benchmark designed to support the development of accurate object detection models for charts and HROs in infographics. It contains 26,250 real and 78,750 synthetic infographics, with over 6.9 million bounding box annotations.
 
-![TEASER](./teaser.png)
+![TEASER](./assets/teaser.png)
 
-## Evaluating Object Detection Models
-Please follow the instructions in [MMDetection](./mmdetection) to set up the environment first.  
+## 🔥 News
+[2025.5] 🎉🎉 We have released the first version of our dataset, which includes 26,250 real and 78,750 synthetic infographic charts, with over 6.9 million bounding box annotations.
 
-We train and test four object detection models using MMDetection: [Faster-Rcnn](./mmdetection/configs/faster_rcnn/faster-rcnn_my_full.py), [YOLOv3](./mmdetection/configs/yolo/yolov3_my_full.py), [RTMDet](./mmdetection/configs/rtmdet/rtmdet_my_full.py), and [Co-DETR](./mmdetection/projects/CO-DETR/configs/codino/co_dino_my_full.py).
+## 📦 Benchmark
+**[👉 Access the full OrionBench dataset on Hugging Face 🤗! 👈](https://huggingface.co/datasets/OrionBench/OrionBench)**
 
-Modify "YOUR ROOT" and "YOUR DATASET" in the corresponding four configurations.
+OrionBench comprises a diverse collection of infographics from two sources: 1) real infographics collected from 7 online platforms, and 2) synthetic infographics programmatically created from 1,072 design templates.
+To effectively annotate the infographics, we combine the model-in-the-loop and programmatic methods.
 
-Execute the following command to train the models:
-```
-cd mmdetection
-bash tools/dist_train.sh configs/faster_rcnn/faster-rcnn_my_full.py 8 --cfg-options data.samples_per_gpu=1 optimizer_config.cumulative_iters=8 optimizer_config.type="GradientCumulativeOptimizerHook" --work-dir work_dir/faster-rcnn_my_full
-bash tools/dist_train.sh configs/yolo/yolov3_my_full.py 8 --cfg-options data.samples_per_gpu=1 optimizer_config.cumulative_iters=8 optimizer_config.type="GradientCumulativeOptimizerHook" --work-dir work_dir/yolov3_my_full
-bash tools/dist_train.sh configs/rtmdet/rtmdet_my_full_new.py 8 --cfg-options data.samples_per_gpu=1 optimizer_config.cumulative_iters=8 optimizer_config.type="GradientCumulativeOptimizerHook" --work-dir work_dir/rtmdet_my_full
-bash tools/dist_train.sh projects/CO-DETR/configs/codino/co_dino_my_full.py 8 --cfg-options data.samples_per_gpu=1 optimizer_config.cumulative_iters=8 optimizer_config.type="GradientCumulativeOptimizerHook" --work-dir work_dir/codetr_my_full
-```
+![PIPELINE](./assets/pipeline.jpg)
 
+## 🎯 Applications
+
+The effectiveness of OrionBench is demonstrated through three applications:
+
+### Thinking-with-Boxes via Grounded Chain-of-Thought
+
+We construct a Thinking-with-Boxes scheme to enhance VLMs by explicitly providing grounded annotations of texts, charts, and HROs along with additional layered infographic images.
+For more details, please refer to this [folder](grounded_CoT). 
+
+![det_qual](./assets/GCoT.jpg)
+
+
+### Evaluating Object Detection Models
+
+We compare 11 object detection models on OrionBench to assess their performance in detecting charts and HROs. 
 The following figure shows detection results of evaluated object detection models: (a) zero-shot prompting with DINO-X; (b) 4-shot prompting with T-Rex2; (c) 4-shot fine-tuning with Co-DETR; (d) fine-tuning on OrionBench with Co-DETR. Bounding boxes in colors are the predictions for charts and HROs.
+For more details, please refer to this [folder](model_evaluation). 
 
-![det_qual](./det_qual.png)
-
-Additionally, the InternImage-based model co-developed with the benchmark is available on [Huggingface](https://huggingface.co/OrionBench/InternImage_L_DINO).
-
-## Paper Links
-
-### Main Paper (This Repository)
-
-- **[OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics](https://arxiv.org/abs/2505.17473)**  
-  _Jiangning Zhu, Yuxing Zhou, Zheng Wang, Juntao Yao, Yima Gu, Yuhui Yuan, Shixia Liu_  
-
-### Relevant Papers
-
-- **[ChartGalaxy: A Dataset for Infographic Chart Understanding and Generation](https://arxiv.org/abs/2505.18668)**  
-  _Zhen Li, Duan Li, Yukai Guo, Xinyuan Guo, Bowen Li, Lanxi Xiao, Shenyu Qiao, Jiashu Chen, Zijian Wu, Hui Zhang, Xinhuan Shu, Shixia Liu_  
-
-- **[InfoChartQA: A Benchmark for Multimodal Question Answering on Infographic Charts](https://arxiv.org/abs/2505.19028)**  
-  _Minzhi Lin, Tianchi Xie, Mengchen Liu, Yilin Ye, Changjian Chen, Shixia Liu_  
+![det_qual](./assets/det_qual.png)
 
 
-## References
+### Applying the Developed Model to Graphic Layout Detection
 
-Please cite our paper if you use our model or dataset in your research
+To demonstrate the broader applicability of OrionBench, we evaluate its effectiveness on graphic layout detection tasks by applying the InternImage-based model.
+For more details, please refer to this [folder](graphic_layout_detection). 
 
+
+![det_qual](./assets/Graphic_det.jpg)
+
+
+## ⚖️ License
+This project is released under the [Apache 2.0 license](LICENSE).
+
+## 📚 Citation
+If you find our work helpful for your research, please consider citing the following BibTeX entry.
 ```
 @misc{zhu2025orionbench,
       title={OrionBench: A Benchmark for Chart and Human-Recognizable Object Detection in Infographics}, 
@@ -62,3 +82,15 @@ Please cite our paper if you use our model or dataset in your research
       url={https://arxiv.org/abs/2505.17473}, 
 }
 ```
+
+## ✨ Related Projects
+- **ChartGalaxy: A Dataset for Infographic Chart Understanding and Generation**  
+[Paper](https://arxiv.org/abs/2505.18668) | [Code](https://github.com/ChartGalaxy/ChartGalaxy) | [Dataset](https://huggingface.co/datasets/ChartGalaxy/ChartGalaxy)
+
+- **InfoChartQA: A Benchmark for Multimodal Question Answering on Infographic Charts**  
+[Paper](https://arxiv.org/abs/2505.19028) | [Code](https://github.com/CoolDawnAnt/InfoChartQA) | [Dataset](https://huggingface.co/datasets/Jietson/InfoChartQA)
+
+
+
+## 🤝 Contact
+- OrionBench2025@gmail.com
